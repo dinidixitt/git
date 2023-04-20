@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,500;1,900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+
+    font-weight: bolder;
+    height: 10vh;
+    align-items: center;
+
+    
+}
+
+nav ul{
+
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 25%; 
+}
+.btn{
+    background-color: #5758E0;
+    padding: .5rem;
+    color: #ffff;
+    border: none;
+}
+.logo{
+    font-size: 1.7rem;
+}
+
+.main-container{
+    background-image: url("https://images.unsplash.com/photo-1680598810612-f2e434a9fc45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+    width: 100%;
+    height: 100vh;
+    /* j,a can only be use with display flex  */
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+}
+
+.inner-content h1{
+    font-size: 3rem;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.inner-content p{
+
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn2{
+    background-color: orangered;
+    padding: 1rem;
+    border: none;
+    color: #ffff;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/* media screen use for responsive ness according to the devices */
+
+@media screen and (max-width:550px){
+    nav ul{
+        display: none;
+    }
+    .inner-content h1{
+        font-size: 1.5rem;
+    }
+}
